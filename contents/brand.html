@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>brand</title>
 
     <!-- 구글 웹폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/brand_common.css">
 
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/brand.js"></script>
 </head>
 <body>
     
     <header>
-        <div class="header-inner">
+            <div class="header-inner">
                 <div class="header-logo"> <!-- 헤더 로고 경로 수정 -->
                     <a href="#"><img src="../img/common/logo.png" alt="롬앤 로고"></a>
                 </div>
@@ -69,13 +72,16 @@
     <!-- 슬라이드 페이지 -->
     <section id="brand1" class="page">
         <div class="brand-story"> <!-- 영상 수정하기 -->
-            <img src="img/brand/brand.gif" alt="">
+            <div class="brand-img">
+                <img src="img/brand/brand.gif" alt="브랜드 스토리 gif모음">
+            </div>
+            
+            <!-- 가상요소 before 또는 after를 써 보세요! -->
+            <img src="img/brand/line.png" alt="실선">
 
-            <img src="" alt="">
-
-            <div class="txt">
+            <div class="des">
                 <h3>(주)아이패밀리SC가 만든 색조 전문 코스매틱 브랜드입니다.</h3>
-                <p>
+                <p class="p1">
                     롬앤은 2016년 9월 론칭하여, 가성비와 가심비가 높은 상품 및 콘텐츠를<br>
                     한국, 중국, 일본, 동남아시아, 미주, 유럽, 중동 등 전 세계 20여 개국의 1824 MZ 소비자들에게 제공해 드리고 있습니다.
                 </p>
@@ -85,31 +91,155 @@
                     세상과 긍정적 영향력을 주고 받는 브랜드로 나아가고자 합니다.
                 </p>
             </div>
-        </div>
-        
+        </div> 
     </section>
 
-    <section id="brand2" class="page"><img src="" alt=""></section>
+    <section id="brand2" class="page">
+        <div class="des">
+            <h2>Trend-Fast & Best-Value</h2>
 
-    <section id="brand3" class="page"><img src="" alt=""></section>
+            <p>
+                트렌드에 민감한 패션·뷰티 시장에서 타겟 고객에 대한<br>
+                깊은 연구와 혁신적 조직 구조를 바탕으로,<br>
+                소비자에게 이성적·감성적 만족을 주는<br>
+                매력적인 상품을 빠르게 선보입니다.
+            </p>
+        </div>
+    </section>
 
-    <section id="brand4" class="page"><img src="" alt=""></section>
+    <section id="brand3" class="page">
+        <div class="des">
+            <h2>Innovative Contenduct</h2>
 
-    <section id="brand5" class="page"><img src="" alt=""></section>
+            <p>
+                상품(Product)과 콘텐츠(Content)를 융합한<br>
+                차별화된 소통으로 디지털 환경에서<br>
+                브랜드 팬덤을 구축합니다.
+            </p>
+        </div>
+    </section>
 
-    <section id="brand6" class="page"></section>
+    <section id="brand4" class="page">
+        <div class="des">
+            <h2>Global Fandom Leadership</h2>
+
+            <p>
+                국경 없는 소비자 소통으로 강력한 팬덤을 구축하여<br>
+                유통 파트너와 동반 성장합니다. 론칭 3년 만에<br>
+                아시아 리더십 확보 및 20여 개국 수출을 이끈 원동력은<br>
+                소비자의 지지와 옹호에 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="brand5" class="page">
+        <div class="des">
+            <div class="des-inner">
+                <h2>One-Team Synergy</h2>
+
+                <p>
+                    구성원 스스로가 브랜드의 팬이 될 때 진정한 가치가 전달된다고 믿습니다. 관계 중심의<br>
+                    건강한 조직 문화와 인터널 브랜딩을 통해 모두가 성취감을 공유하는 단단한 결속력을 실천합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="brand6" class="page">
+        <div class="slogan">
+            <h2>#BHF : Beauty Holic’s Favorite</h2>
+
+            <p>전 세계 20여 개국 MZ 세대가 함께 즐기는 롬앤의 컬러로 화장품에 푹 빠지는 즐거운 몰입의 순간을 경험해 보세요.</p>
+        </div>
+
+        <div class="roll">
+            <ul class="right-roll">
+                <li><img src="img/brand/base_slider1.png" alt="베이스 슬라이더1"></li>
+                <li><img src="img/brand/base_slider2.png" alt="베이스 슬라이더2"></li>
+                <li><img src="img/brand/base_slider3.png" alt="베이스 슬라이더3"></li>
+                <li><img src="img/brand/eye_slider1.png" alt="아이 슬라이더1"></li>
+                <li><img src="img/brand/eye_slider2.png" alt="아이 슬라이더2"></li>
+                <li><img src="img/brand/eye_slider3.png" alt="아이 슬라이더3"></li>
+                <li><img src="img/brand/eye_slider4.png" alt="아이 슬라이더4"></li>
+                <li><img src="img/brand/eye_slider5.png" alt="아이 슬라이더5"></li>
+                <li><img src="img/brand/face_slider1.png" alt="페이스 슬라이더1"></li>
+                <li><img src="img/brand/base_slider1.png" alt="베이스 슬라이더1"></li>
+            </ul>    
+
+            <ul class="left-roll">
+                <li><img src="img/brand/face_slider2.png" alt="페이스 슬라이더2"></li>
+                <li><img src="img/brand/face_slider3.png" alt="페이스 슬라이더3"></li>
+                <li><img src="img/brand/face_slider4.png" alt="페이스 슬라이더4"></li>
+                <li><img src="img/brand/lip_slider1.png" alt="립 슬라이더1"></li>
+                <li><img src="img/brand/lip_slider2.png" alt="립 슬라이더2"></li>
+                <li><img src="img/brand/lip_slider3.png" alt="립 슬라이더3"></li>
+                <li><img src="img/brand/lip_slider4.png" alt="립 슬라이더4"></li>
+                <li><img src="img/brand/lip_slider5.png" alt="립 슬라이더5"></li>
+                <li><img src="img/brand/lip_slider6.png" alt="립 슬라이더6"></li>
+                <li><img src="img/brand/face_slider2.png" alt="페이스 슬라이더2"></li>
+            </ul>
+        </div>
+    </section>
 
     <!-- 페이저 내비게이션 -->
     <nav class="side-pager"> <!-- 페이지 경로 수정 -->
         <ul>
-            <li class="on"><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="on"><a href="#brand1"></a></li>
+            <li><a href="#brand2"></a></li>
+            <li><a href="#brand3"></a></li>
+            <li><a href="#brand4"></a></li>
+            <li><a href="#brand5"></a></li>
+            <li><a href="#brand6"></a></li>
         </ul>
     </nav>
+
+    <footer class="page">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="../img/common/logo.png" alt="롬앤 로고">
+                </div>
+
+                <div class="footer-links clear">
+                    <a href="#">주문내역</a>
+                    <a href="#">1:1 문의</a>
+                    <a href="#">채용 문의</a>
+                    <a href="#">제휴 문의</a>
+                    <a href="#">해외 수출 문의</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom clear">
+                <div class="left">
+                    <p><span>(주)아이패밀리에스씨</span></p>
+                    <p>서울특별시 송파구 동남로 122 (문정동) COLLECTED 빌딩</p>
+                    <p>사업자등록번호: 120-86-00633</p>
+                    <p>통신판매업 신고번호: 제2022-서울송파-1690호</p>
+                    <p>대표자: 김태욱, 김성현</p>
+                    <p class="copyright">© 2023. iFamilySC Co., Ltd. all rights reserved.</p>
+                </div>
+
+                <div class="right">
+                    <div class="customer-service">
+                        <h3>고객센터</h3>
+
+                        <p class="phone">1670-2238</p>
+                        <p>AM 10:00~17:00</p>
+                        <p>(점심시간 : 12:20~13:30)</p>
+                    </div>
+
+                    <div class="sns clear">
+                        <a href="https://www.instagram.com/romandyou/"><img src="../img/common/instagram_icon.png" alt="인스타그램 바로가기"></a>
+                        <a href="https://www.tiktok.com/@romandyou_official?is_from_webapp=1&sender_device=pc"><img src="../img/common/tiktiok_icon.png" alt="틱톡 바로가기"></a>
+                        <a href="https://pf.kakao.com/_RzWSu"><img src="../img/common/kakaotalk_icon.png" alt="카카오톡 바로가기"></a>
+                        <a href="https://x.com/romand_kr"><img src="../img/common/twitter_icon.png" alt="트위터 바로가기"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

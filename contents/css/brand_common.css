@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*** brand_common.css ***/
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+/* 각 페이지 공통 너비, 높이 설정 */
+.page {
+    width: 100%;
+    height: 100%;
+
+    /* outline: 3px solid blue; */
+}
+
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    border-bottom: 1px solid #ccc;
+}
+
+section .des h2 {
+    font-size: 46px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+
+    margin-bottom: 20px;
+}
+section .des p {
+    font-size: 26px;
+}
+
+section .slogan h2 {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* 영문폰트(header) 클래스 */
+.eng-font {
+    font-family: "Montserrat", sans-serif;
+}

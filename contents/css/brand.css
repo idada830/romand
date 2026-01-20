@@ -1,1 +1,202 @@
 @charset "utf-8";
+
+/*** brand.css ***/
+
+#brand1 {
+    padding-top: 180px;
+    box-sizing: border-box;
+}
+.brand-story {
+    width: 60%;
+    /* margin: 180px auto; */
+    margin: 0 auto;
+    text-align: center;
+
+    /* background-color: bisque; */
+}
+.brand-story .brand-img {
+    width: 650px;
+    height: 360px;
+    margin: 0 auto 20px;
+}
+.brand-story .brand-img img {
+    width: 100%;
+    height: 100%;}
+
+.brand-story img {
+    margin-bottom: 20px;
+}
+
+.brand-story .des {
+}
+.brand-story .des h3 {
+    font-size: 26px;
+    color: #111;
+    /* margin-bottom: 15px; */
+}
+.brand-story .des .p1 {
+    margin-bottom: 8px;
+}
+.brand-story .des p {
+    font-size: 20px;
+    color: #555;
+}
+.brand-story .des p span {
+    color: #F28D9F;
+}
+
+
+
+#brand2 {
+    background-color: #F28D9F;
+    background-image: url(../img/brand/slider1.png);
+    background-size: 50% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    position: relative; /* .des의 기준 */
+}
+#brand2 .des {
+    color: #fff;
+
+    position: absolute;
+    top: 65%;
+    right: 55%;
+}
+
+
+
+#brand3 {
+    background-image: url(../img/brand/slider2.png);
+    background-size: 50% auto;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    position: relative; /* .des의 기준 */
+}
+#brand3 .des {
+    /* display: inline-block; */
+    /* absolute 요소에 width가 설정되지 않으면
+    내용만큼의 너비를 가집니다!! */
+
+    position: absolute;
+    top: 65%;
+    left: 55%;
+}
+
+
+
+#brand4 {
+    background-color: #C97482;
+    background-image: url(../img/brand/slider3.png);
+    background-size: 50% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+#brand4 .des {
+    color: #fff;
+
+    position: absolute;
+    top: 65%;
+    right: 55%;
+}
+
+
+
+#brand5 {
+    background-image: url(../img/brand/slider4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    position: relative; /* .des의 기준 */
+}
+#brand5 .des {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+}
+#brand5 .des .des-inner {
+    margin: 45px auto;
+
+    /* outline: 1px solid red; */
+}
+
+
+
+#brand6 {
+    position: relative; /* .roll의 기준 */
+}
+#brand6 .slogan {
+    text-align: center;
+}
+#brand6 .slogan p {
+    font-size: 18px;
+    color: #333;
+}
+
+.roll {
+    position: absolute;
+    bottom: 0;
+}
+.right-roll {
+    width: 100%;
+}
+.right-roll li {
+    float: left;
+}
+.right-roll li img {
+    display: block;
+}
+
+.left-roll {
+    width: 100%;
+}
+.left-roll li {
+    float: left;
+}
+.left-roll li img {
+    display: block;
+}
+
+
+
+.side-pager {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+.side-pager ul {}
+.side-pager ul li {
+    float: none;
+    margin: 10px 0;
+}
+.side-pager ul li a {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F28D9F;
+    border-radius: 50%;
+    display: block;
+}
+
+/* 선택된 페이저 디자인 */
+.side-pager ul li.on {
+    border-radius: 50%;
+    background-color: #F28D9F;
+}
+.side-pager ul li.on a {
+    display: block;
+}
+
+footer {
+    width: 100%;
+    height: 500px !important;
+    box-sizing: border-box;
+}
